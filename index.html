@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=63493" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=21123" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=63493" type="text/javascript"></script>
+    <script src="js/main.js?v=21123" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -23,6 +23,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,700;1,300&amp;display=swap" rel="stylesheet">
   </head>
   <body>
+    <header>
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__inner">
+            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-analistica-digital.png"></a></div>
+            <div class="header__nav">
+              <div class="header__nav__bg"></div>
+              <div class="header__nav__nav">
+                <div class="header__nav__bar">
+                  <div class="header__nav__close">
+                    <div></div>
+                    <div></div>
+                  </div>
+                </div>
+                <div class="header__nav__back">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a data-goto=".section--media--1">Agencia Digital</a></li>
+                    <li><a data-goto=".section--media--2">Campañas ADS</a></li>
+                    <li><a data-goto=".section--media--3">Página web</a></li>
+                    <li class="li-max"><a data-goto=".section--media--4">Redes Sociales</a></li>
+                    <li><a data-goto=".section--media--5">Data Marketing</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__item header__item--ham">
+                <div class="header__ham"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <div id="sections">
       <section class="section--main"> 
         <div class="section__bg"> 
@@ -30,8 +70,8 @@
         </div>
         <div class="section__wrap section__wrap--main">
           <div class="section__body dscroll">
-            <div class="section__body__top"> 
-              <h1 class="section__title"><strong>Analistica</strong> Digital </h1>
+            <div class="section__body__top">
+              <div class="section__logo"> <img src="img/uploads/logo-analistica-main.png"></div>
               <p class="section__description">Centrados en las personas, porque nuestra agencia digital busca llevar tu marca a todo el mundo y que las personas se enamoren de ella.</p>
             </div>
             <div class="section__body__center"> 
@@ -56,7 +96,7 @@
           </div>
         </div>
       </section>
-      <section class="section--media">
+      <section class="section--media section--media--1">
         <div class="section__body">
           <div class="cols cols-gutter-0">
             <div class="section__flex">
@@ -78,14 +118,14 @@
                     <div class="section__tag">+ SEO</div>
                     <div class="section__tag">+ SEM</div>
                   </div>
-                  <p class="section__description">Simplificar el marketing digital, no te queremos marear con términos técnicos y raros. Sabemos que lo que más te preocupa es vender. Nuestro trabajo es ayudar que lo logres. El marketing digital no son programas mágicos que resuelven todo, es estrategia, análisis y creatividad. Tu marca no tiene que buscar consumidores, tiene que contar fanáticos. </p><a href="#" class="btn">Solicitar más info.</a>
+                  <p class="section__description">Simplificar el marketing digital, no te queremos marear con términos técnicos y raros. Sabemos que lo que más te preocupa es vender. Nuestro trabajo es ayudar que lo logres. El marketing digital no son programas mágicos que resuelven todo, es estrategia, análisis y creatividad. Tu marca no tiene que buscar consumidores, tiene que contar fanáticos. </p><a data-goto=".section--contact" class="btn">Solicitar más info.</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section--media">
+      <section class="section--media section--media--2">
         <div class="section__body">
           <div class="cols cols-gutter-0">
             <div class="section__flex">
@@ -108,14 +148,14 @@
                     <div class="section__tag">+ SEM</div>
                     <div class="section__tag">+ Leads</div>
                   </div>
-                  <p class="section__description">El objetivo es aumentar la visibilidad y el posicionamiento de tu marca en los resultados de búsqueda. Las personas buscamos y valoramos las marcas que aportan y se diferencian en el mercado. Somos un equipo Certificado en Google ADS.</p><a href="#" class="btn">Consulta por Campañas Google Ads.</a>
+                  <p class="section__description">El objetivo es aumentar la visibilidad y el posicionamiento de tu marca en los resultados de búsqueda. Las personas buscamos y valoramos las marcas que aportan y se diferencian en el mercado. Somos un equipo Certificado en Google ADS.</p><a data-goto=".section--contact" class="btn">Consulta por Campañas Google Ads.</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section--media">
+      <section class="section--media section--media--3">
         <div class="section__body">
           <div class="cols cols-gutter-0">
             <div class="section__flex">
@@ -136,14 +176,14 @@
                     <div class="section__tag">+ CSS</div>
                     <div class="section__tag">+ JS</div>
                   </div>
-                  <p class="section__description">La gente se enamora de las marcas que les ofrecen una experiencia, no de las que simplemente les venden un producto. Al crear tu sitio web, piense en el tipo de experiencia que quiere ofrecer a sus visitantes y en cómo puede mejorar sus vidas con tus productos y servicios.</p><a href="#" class="btn">Consulta por Diseño de Páginas Web.</a>
+                  <p class="section__description">La gente se enamora de las marcas que les ofrecen una experiencia, no de las que simplemente les venden un producto. Al crear tu sitio web, piense en el tipo de experiencia que quiere ofrecer a sus visitantes y en cómo puede mejorar sus vidas con tus productos y servicios.</p><a data-goto=".section--contact" class="btn">Consulta por Diseño de Páginas Web.</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section--banner"> 
+      <section class="section--banner section--media--4"> 
         <div class="section__bg"> 
           <div class="bg"> <img src="img/uploads/background-banner.png"></div>
         </div>
@@ -161,7 +201,7 @@
                     <div class="section__tag">+ Pinterest</div>
                     <div class="section__tag">+ Tik Tok</div>
                   </div>
-                  <p class="section__description">Nuestro equipo de expertos digitales desarrollará e implementará tu estrategia social media, para lograr tus objetivos de marca multiplataforma. Es aquí el lugar donde tu marca puede contar su historia, destacando porque es valiosa. Buscamos crear una comunidad fanática de tu marca más que solo clientes.</p><a href="#" class="btn">Consulta por Servicios de Redes Sociales.</a>
+                  <p class="section__description">Nuestro equipo de expertos digitales desarrollará e implementará tu estrategia social media, para lograr tus objetivos de marca multiplataforma. Es aquí el lugar donde tu marca puede contar su historia, destacando porque es valiosa. Buscamos crear una comunidad fanática de tu marca más que solo clientes.</p><a data-goto=".section--contact" class="btn">Consulta por Servicios de Redes Sociales.</a>
                 </div>
               </div>
               <div class="col-md-6">
@@ -171,7 +211,7 @@
           </div>
         </div>
       </section>
-      <section class="section--media">
+      <section class="section--media section--media--5">
         <div class="section__body">
           <div class="cols cols-gutter-0">
             <div class="section__flex">
@@ -194,7 +234,7 @@
                     <div class="section__tag">+ BBDD</div>
                     <div class="section__tag">+ MAIL MARKETING</div>
                   </div>
-                  <p class="section__description">Son estos grandes datos los que aprovechan los profesionales del marketing de todo el mundo para conocer mejor a sus clientes. ¿Y si le dijéramos que el big data puede darle el poder de predecir el futuro? Pues no está muy lejos de la realidad. El marketing basado en datos ayuda a las empresas a comprender mejor a sus clientes, a ofrecer un servicio más personalizado y a generar resultados más precisos de las campañas publicitarias</p><a href="#" class="btn">Necesito que me contacten :).</a>
+                  <p class="section__description">Son estos grandes datos los que aprovechan los profesionales del marketing de todo el mundo para conocer mejor a sus clientes. ¿Y si le dijéramos que el big data puede darle el poder de predecir el futuro? Pues no está muy lejos de la realidad. El marketing basado en datos ayuda a las empresas a comprender mejor a sus clientes, a ofrecer un servicio más personalizado y a generar resultados más precisos de las campañas publicitarias</p><a data-goto=".section--contact" class="btn">Necesito que me contacten :).</a>
                 </div>
               </div>
             </div>
@@ -228,6 +268,18 @@
                       <div class="form__element"> 
                         <div class="form__input"> 
                           <input type="number" name="phone" placeholder="Teléfono" required>
+                        </div>
+                      </div>
+                      <div class="form__element"> 
+                        <div class="form__input"> 
+                          <select name="services" required>
+                            <option selected disabled>Selecciona un servicio</option>
+                            <option value="agencia-digital">Agencia Digital</option>
+                            <option value="Campaña-ads">Campanas ADS</option>
+                            <option value="pagina-web">Página Web</option>
+                            <option value="redes-sociales">Redes Sociales</option>
+                            <option value="data-marketing">Data Marketing</option>
+                          </select>
                         </div>
                       </div>
                       <div class="form__element"> 
@@ -270,19 +322,19 @@
             <div class="footer__logo"> <a href="#">Analistica
                 <!--img(src="img/icons/logo-analistica.svg") --></a></div>
             <div class="footer__socials"> 
-              <div class="footer__social"> <a href="#"><span class="fa fa-linkedin"></span></a></div>
-              <div class="footer__social"> <a href="#"><span class="fa fa-instagram"></span></a></div>
+              <div class="footer__social"> <a href="https://api.whatsapp.com/send?phone=56976498078" target="_blank"><span class="fa fa-whatsapp"></span></a></div>
+              <div class="footer__social"> <a href="https://www.instagram.com/analisticadigital/" target="_blank"><span class="fa fa-instagram"></span></a></div>
             </div>
-            <p class="footer__description">2021 ANALISTICA. Reservados todos los derechos. Salvo que se permita expresamente lo contrario, ninguna imagen u otro contenido que se muestre en este sitio web puede copiarse, reimprimirse, volver a publicarse, modificarse o distribuirse de ninguna forma sin el permiso expreso por escrito del propietario de los derechos de autor.</p>
+            <p class="footer__description">2022 ANALISTICA DIGITAL. Reservados todos los derechos. Salvo que se permita expresamente lo contrario, ninguna imagen u otro contenido que se muestre en este sitio web puede copiarse, reimprimirse, volver a publicarse, modificarse o distribuirse de ninguna forma sin el permiso expreso por escrito del propietario de los derechos de autor.</p>
           </div>
           <div class="footer__links"> 
-            <ul> 
+            <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="base-standar.html">Bases estándar</a></li>
-              <li><a href="bases-personalizadas.html">Bases personalizadas</a></li>
-              <li><a href="investigacion-proyectos.html">Investigación y proyectos</a></li>
-              <li class="li-max"><a href="datos-marketing.html">Servicios de datos y marketing</a></li>
-              <li><a href="contact.html">Contacto</a></li>
+              <li><a data-goto=".section--media--1">Agencia Digital</a></li>
+              <li><a data-goto=".section--media--2">Campañas ADS</a></li>
+              <li><a data-goto=".section--media--3">Página web</a></li>
+              <li class="li-max"><a data-goto=".section--media--4">Redes Sociales</a></li>
+              <li><a data-goto=".section--media--5">Data Marketing</a></li>
             </ul>
           </div>
         </div>
