@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <link href="img/favicon.png" rel="shortcut icon">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=21123" rel="stylesheet" type="text/css">
+    <link href="css/main.css?v=7198" rel="stylesheet" type="text/css">
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css" rel="stylesheet">
-    <script src="js/main.js?v=21123" type="text/javascript"></script>
+    <script src="js/main.js?v=7198" type="text/javascript"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
@@ -27,7 +27,7 @@
       <div class="header__primary">
         <div class="header__wrap">
           <div class="header__inner">
-            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-analistica-digital.png"></a></div>
+            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-analistica-digital-2.png"></a></div>
             <div class="header__nav">
               <div class="header__nav__bg"></div>
               <div class="header__nav__nav">
@@ -50,6 +50,7 @@
                     <li><a data-goto=".section--media--3">Página web</a></li>
                     <li class="li-max"><a data-goto=".section--media--4">Redes Sociales</a></li>
                     <li><a data-goto=".section--media--5">Data Marketing</a></li>
+                    <li><a data-goto=".section--contact">Contacto</a></li>
                   </ul>
                 </nav>
               </div>
@@ -66,32 +67,15 @@
     <div id="sections">
       <section class="section--main"> 
         <div class="section__bg"> 
-          <div class="bg"><img src="img/uploads/background-main.gif"></div>
+          <div class="bg"><img src="img/uploads/background-main.jpeg"></div>
         </div>
+        <div class="section__image"> <img src="img/uploads/image-home.png"></div>
         <div class="section__wrap section__wrap--main">
-          <div class="section__body dscroll">
-            <div class="section__body__top">
-              <div class="section__logo"> <img src="img/uploads/logo-analistica-main.png"></div>
-              <p class="section__description">Centrados en las personas, porque nuestra agencia digital busca llevar tu marca a todo el mundo y que las personas se enamoren de ella.</p>
-            </div>
-            <div class="section__body__center"> 
-              <div class="section__letter"> <img src="img/uploads/letter-main.png"></div>
-            </div>
-            <div class="section__body__bottom">
-              <div class="section__form"> 
-                <p class="section__info">Solicita un <strong>diagnostico gratis</strong> de tu marca o emprendimiento.</p>
-                <form class="form">
-                  <div class="form__element"> 
-                    <div class="form__input"> 
-                      <input type="text" name="#" placeholder="Solicita Diagnostico Gratis">
-                    </div>
-                    <div class="form__button"> 
-                      <button class="btn">Enviar</button>
-                    </div>
-                  </div>
-                </form>
-                <p class="section__description">Aquí seguimos trabajando con personas y no con máquinas. Somos conscientes de la importancia de las herramientas digitales, pero sin creatividad, planeación y emoción, no puede haber acción.</p>
-              </div>
+          <div class="section__body">
+            <div class="section__content">
+              <p class="section__info">"EL MUNDO DIGITAL PUEDE SER <strong>MEJOR</strong>"</p>
+              <div data-goto=".section--contact" class="section__button"><span>>> Solicita una asesoría <strong>gratis</strong> <<</span></div>
+              <p class="section__info">#ImaginAllThePeopleLivingLifeInPeace<img src="img/icons/hearth.png"></p>
             </div>
           </div>
         </div>
@@ -234,7 +218,7 @@
                     <div class="section__tag">+ BBDD</div>
                     <div class="section__tag">+ MAIL MARKETING</div>
                   </div>
-                  <p class="section__description">Son estos grandes datos los que aprovechan los profesionales del marketing de todo el mundo para conocer mejor a sus clientes. ¿Y si le dijéramos que el big data puede darle el poder de predecir el futuro? Pues no está muy lejos de la realidad. El marketing basado en datos ayuda a las empresas a comprender mejor a sus clientes, a ofrecer un servicio más personalizado y a generar resultados más precisos de las campañas publicitarias</p><a data-goto=".section--contact" class="btn">Necesito que me contacten :).</a>
+                  <p class="section__description">Son estos grandes datos los que aprovechan los profesionales del marketing de todo el mundo para conocer mejor a sus clientes. ¿Y si le dijéramos que el big data puede darle el poder de predecir el futuro? Pues no está muy lejos de la realidad. El marketing basado en datos ayuda a las empresas a comprender mejor a sus clientes, a ofrecer un servicio más personalizado y a generar resultados más precisos de las campañas publicitarias.</p><a data-goto=".section--contact" class="btn">Necesito que me contacten :).</a>
                 </div>
               </div>
             </div>
@@ -272,7 +256,7 @@
                       </div>
                       <div class="form__element"> 
                         <div class="form__input"> 
-                          <select name="services" required>
+                          <select name="service" required>
                             <option selected disabled>Selecciona un servicio</option>
                             <option value="agencia-digital">Agencia Digital</option>
                             <option value="Campaña-ads">Campanas ADS</option>
@@ -319,12 +303,9 @@
       <div class="footer__wrap">
         <div class="footer__flex"> 
           <div class="footer__content">
-            <div class="footer__logo"> <a href="#">Analistica
-                <!--img(src="img/icons/logo-analistica.svg") --></a></div>
-            <div class="footer__socials"> 
-              <div class="footer__social"> <a href="https://api.whatsapp.com/send?phone=56976498078" target="_blank"><span class="fa fa-whatsapp"></span></a></div>
-              <div class="footer__social"> <a href="https://www.instagram.com/analisticadigital/" target="_blank"><span class="fa fa-instagram"></span></a></div>
-            </div>
+            <div class="footer__logo"> <a href="#"><img src="img/icons/logo-analistica-digital-white.png"></a></div>
+            <p class="footer__subtitle">Imagine all the people living life in peace <img src="img/icons/hearth.png"></p>
+            <p class="footer__description">Buscas saber más de servicios de Big Data o Data Science, te invitamos a conocer nuestra agencia de inteligencia de datos <a href="https://analistica.cl/" target="_blank">WWW.ANALISTICA.CL</a></p>
             <p class="footer__description">2022 ANALISTICA DIGITAL. Reservados todos los derechos. Salvo que se permita expresamente lo contrario, ninguna imagen u otro contenido que se muestre en este sitio web puede copiarse, reimprimirse, volver a publicarse, modificarse o distribuirse de ninguna forma sin el permiso expreso por escrito del propietario de los derechos de autor.</p>
           </div>
           <div class="footer__links"> 
@@ -335,7 +316,12 @@
               <li><a data-goto=".section--media--3">Página web</a></li>
               <li class="li-max"><a data-goto=".section--media--4">Redes Sociales</a></li>
               <li><a data-goto=".section--media--5">Data Marketing</a></li>
+              <li><a data-goto=".section--contact">Contacto</a></li>
             </ul>
+            <div class="footer__socials"> 
+              <div class="footer__social"> <a href="https://api.whatsapp.com/send?phone=56976498078" target="_blank"><span class="fa fa-whatsapp"></span></a></div>
+              <div class="footer__social"> <a href="https://www.instagram.com/analisticadigital/" target="_blank"><span class="fa fa-instagram"></span></a></div>
+            </div>
           </div>
         </div>
       </div>
